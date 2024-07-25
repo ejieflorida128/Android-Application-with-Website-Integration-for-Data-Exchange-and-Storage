@@ -1,0 +1,57 @@
+<!-- res/layout/view_event_entry.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Team One -->
+    <TextView
+        android:id="@+id/teamOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team One" />
+
+    <!-- Team One Score -->
+    <TextView
+        android:id="@+id/teamOneScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team One Score" />
+
+    <!-- Team Two -->
+    <TextView
+        android:id="@+id/teamTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Two" />
+
+    <!-- Team Two Score -->
+    <TextView
+        android:id="@+id/teamTwoScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Two Score" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" />
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time" />
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location" />
+
+</LinearLayout>

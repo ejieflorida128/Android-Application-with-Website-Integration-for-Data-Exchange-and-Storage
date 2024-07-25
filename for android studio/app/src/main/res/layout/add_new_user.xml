@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:background="#CCCCCC"
+    android:orientation="vertical"
+    android:paddingTop="1dp" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cc0000"
+        android:padding="5dp"
+        android:text="@string/adduser"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="602dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_alignLeft="@+id/userName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="467dp"
+            android:layout_marginBottom="63dp"
+            android:onClick="AddNewEvent"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_below="@+id/userName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="466dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="64dp"
+            android:layout_toRightOf="@+id/btnadd"
+            android:onClick="cancelAddEvent"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:id="@+id/teamoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="53dp"
+            android:text="Team one" />
+
+        <EditText
+            android:id="@+id/TEAMONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamoneText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="-34dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/teamonescoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamoneText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            android:text="Team one Score" />
+
+        <EditText
+            android:id="@+id/TeamOneScore"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEAMONE"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/teamonescoreText"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TeamtwoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teamonescoreText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="38dp"
+            android:text="Team two" />
+
+        <EditText
+            android:id="@+id/TEAMTWO"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TeamOneScore"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/TeamtwoText"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TeamtwscoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TeamtwoText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="37dp"
+            android:text="Team two Score" />
+
+        <EditText
+            android:id="@+id/TeamTwoScore"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TEAMTWO"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/TeamtwscoreText"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/DateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TeamtwscoreText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="31dp"
+            android:text="Date" />
+
+        <EditText
+            android:id="@+id/DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TeamTwoScore"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/DateText"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DateText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Time" />
+
+        <EditText
+            android:id="@+id/TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DATE"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/TimeText"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/LocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TimeText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="37dp"
+            android:text="Location" />
+
+        <EditText
+            android:id="@+id/LOCATION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TIME"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toEndOf="@+id/LocationText"
+            android:ems="10"
+            android:inputType="text" />
+    </RelativeLayout>
+</LinearLayout>
